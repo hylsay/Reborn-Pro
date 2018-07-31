@@ -1,0 +1,2 @@
+<?php
+get_header();?><div class="fix_post_width"><div class="cats_display single four0four"><div style="flex-grow: 1;"></div><div><a href="<?php echo home_url(); ?>"><img src="<?php echo get_option('404页面图片'); ?>"></a></div><div style="flex-grow: 1;"></div></div></div><?php get_footer(); ?>

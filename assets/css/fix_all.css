@@ -1,0 +1,9 @@
+#wrap {
+	max-width: 1470px;
+	margin: auto;
+	box-shadow: -1px 0 0 #E2E4E7;
+}
+.header-container {
+	max-width: 1470px;
+	margin: auto;
+}

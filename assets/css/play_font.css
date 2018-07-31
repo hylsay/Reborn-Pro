@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Play";
+    src: url("../fonts/Play-regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Play";
+    src:url("../fonts/Play-bold.ttf") format("truetype"); 
+    font-style: normal;
+    font-weight: bold;
+}

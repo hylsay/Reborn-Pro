@@ -1,0 +1,1 @@
+<div class="single-post-container col-lg-3 col-sm-4 col-xs-6"><div class="single-post relate"><a href="<?php the_permalink(); ?>"><div class="thumb_img" style="background-image:url('<?php the_post_thumbnail_url(); ?>');"></div></a><div class="post_meta"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3></div></div></div>

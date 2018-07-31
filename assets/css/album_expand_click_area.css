@@ -1,0 +1,1 @@
+[pandaPicshow] .showBox>.navigator>*{width:50%;max-width:50%}[pandaPicshow] .showBox>.navigator>.prev::before,[pandaPicshow] .showBox>.navigator>.next::before{content:none}[pandaPicshow] .showBox>.navigator>.prev::after,[pandaPicshow] .showBox>.navigator>.next::after{content:none}

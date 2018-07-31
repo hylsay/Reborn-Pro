@@ -1,0 +1,8 @@
+<?php
+/*
+Template Name: 常见问题
+*/
+get_header();if($title_img = get_post_meta($post->ID,"日志头图",true)) {	$img_class = 'img-header';} else {	$title_img = get_the_post_thumbnail_url();	$img_class = 'img-thumb';}
+if (get_option('fixed_width') == "ai") {	$content_str = get_the_content();	if (strpos($content_str,'[fmt ') !== false) { wp_enqueue_style( 'fixed_width',get_stylesheet_directory_uri().'/assets/css/fix_post.css' ); }
+}
+$faq_accordion = get_option('faq_accordion') ? 'true' : 'false';?><div class="fix_post_width"><div class="cats_display single"><div class="top_img <?php echo $img_class; ?>" style="background-image:url('<?php echo $title_img; ?>'); position: relative;"><h1 style="top: 60%;position: absolute;margin-top: 0;"><?php the_title(); ?></h1></div><div class="content-container clear-float"><article class="clear-float faq"><div class="faq_search_box el-input el-input-group el-input-group--append el-input-group--prepend"><div class="el-input-group__prepend">查询问题</div><input autocomplete="off" placeholder="请输入关键字..." v-model="faq.searchbox" rows="2" validateevent="true" class="el-input__inner" type="text" @keyup.enter="faq_search"><div class="el-input-group__append"><button type="button" class="el-button el-button--default" @click="faq_search"><i class="el-icon-search"></i></button></div></div><el-collapse v-if="faq.answers.length > 0" :accordion='<?php echo $faq_accordion; ?>'><el-collapse-item :title="answer.title" v-for="answer in faq.answers"><div v-html="answer.content"></div></el-collapse-item></el-collapse><p v-else>{{faq.tip}}</p></article></div></div></div><?php get_footer(); ?>

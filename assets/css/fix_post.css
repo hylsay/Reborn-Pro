@@ -1,0 +1,22 @@
+.fix_post_width {
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+}
+
+.cats_display.single {
+    transition: .25s;
+}
+
+@media (min-width: 1471px) {
+    /*大于1470*/
+    .cats_display.single {
+    	box-shadow: 0px 5px 20px #ced6df;
+        margin-top: 20px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .main > .content {
+        background: linear-gradient(90deg,#eff2f7,#fff 30%,#fff 70%,#eff2f7)
+    }
+}

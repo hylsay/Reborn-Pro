@@ -1,0 +1,3 @@
+<?php
+get_header();if (get_post_meta($post->ID,"showBox_contain",true) == 'checked') {	echo "<script>pandastudio_framework.showBox_contain = true</script>";}?><div class="fix_post_width"><div class="cats_display single gallery"><div pandaPicshow='enable' shadowBox="disable"><div class="showBox" ratio="1" :class="{contain:showBox_contain}" @touchstart="showBoxtouchStart" @touchend="showBoxtouchEnd"></div><div class="thumbnails"><?php
+foreach (get_post_meta($post->ID,"gallery_images",true) as $img_url) {	echo "<a fullsize=".$img_url." thumbnail=".$img_url."></a>";	}?></div></div></div></div><?php get_footer(); ?>
